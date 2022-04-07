@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title>The Firm Kurumsal</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style type="text/css">
+        body { background: #f9f9f9; color: #999; font: 17px/1.6em helvetica,arial,sans-serif; }
+        a, a:link, a:active,a:visited { color: #999; text-decoration: none; }
+            a:hover { color: #666; }
+        h1, h2 { margin-bottom: 6px; color: #004f99; font: bold 2em/1.15 sans-serif; }
+            h1 em { font: italic normal 0.45em/1em helvetica,arial,sans-serif; color: #ccc; float: right; margin-top: 16px; }
+        h2 { color: #333; font-size: 1.5em; }
+        #viewport { background: #fff; width: 480px; margin: 30px auto; padding: 30px; }
+        #templates { border: solid #004f99; border-width: 1px 0; padding: 20px 0; margin-top: .5em; }
+            #templates .item {margin-bottom: 20px; }
+            #templates .item.last, #templates .item:last-child { margin-bottom: 0; }
+        ul { margin: 0; padding-left: 1em; }
+            ul li { list-style: circle inside none; }
+            ul li { margin: 0 .5em; font-size: 1em; font-family: sans-serif; line-height: 1.6em; }
+            ul li a:after  {content:".html"; font-style: italic; font-size: 0.80em; color: #ccc; line-height: 1em; }
+            ul li:hover { list-style: disc inside none; }
+            ul a:hover:after { color: #666; font-style: normal; }
+            ul li sup { font-size: 10px; vertical-align: super; }
+            li.separator { border-bottom: 1px solid #eee; height: 0.5em; list-style: none !important; margin-bottom: 0.5em; }
+        footer { font-size: 0.75em; overflow: hidden; }
+            footer span { float: right; font-style: italic; color: #bbb; }
+            footer a { font-style: normal; color: #999 !important; }
+        @media screen and (max-width: 640px) {
+            #viewport { width: 90%; margin: 5.16% auto; padding: 5.16%;  }
+            h1 { font-size: 1.7em; }
+        }
+    </style>
+</head>
+<body>
+<div id="viewport">
+    <h1>The Firm<em>DEV</em></h1>
+    <div id="templates">
+        <div class="item last">
+            <ul>
+                <li><a href="homepage.html">Anasayfa</a></li>
+                <li>
+                    <a href="page.html">Page</a>
+                    <ul>
+                        <li><a href="aboutUs.html">AboutUs</a></li>
+                        <li><a href="certification.html">Certifications</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="products-category.html">Products Category</a></li>
+                        <li><a href="products-details.html">Products Details</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <!-- a href="CHANGELOG">CHANGELOG<a -->
+        <span>Medyasoft (c)2021</span>
+    </footer>
+</div>
+
+<script>(function(url){document.addEventListener("DOMContentLoaded",function(){var xhr=new XMLHttpRequest();xhr.overrideMimeType("application/json");xhr.open('GET',url,true);xhr.onreadystatechange=function(){if(xhr.readyState===4&&xhr.status===200){document.getElementsByTagName('h1')[0].getElementsByTagName('em')[0].textContent=JSON.parse(xhr.responseText).version}};xhr.send(null)},false)}('package.json'));</script>
+</body>
+</html>
